@@ -1,12 +1,21 @@
 ---
 name: create-veo-video
 description: Generate AI videos using Google Veo 3.1 via Vertex AI. Use for cinematic B-roll, product demos, or any AI-generated video content (not avatar videos - use create-heygen-video for HeyGen avatars).
+automation: manual
 allowed-tools: Bash, Read, Write
 ---
 
 # Create Veo Video
 
 Generate AI videos using Google's Veo 3.1 model via Vertex AI. Produces 8-second cinematic clips with audio.
+
+## State Dependencies
+
+| Source | Location | Read | Write | Description |
+|--------|----------|------|-------|-------------|
+| Service Account | `scripts/trinity-vertex-ai-account.json` | ✓ | | GCP credentials for Vertex AI |
+| Reference Images | User-provided paths | ✓ | | Optional character/object consistency |
+| Output Video | User-specified or `/tmp/veo_output.mp4` | | ✓ | Generated video clip |
 
 ## Quick Start
 
@@ -200,6 +209,15 @@ python3 ~/.claude/skills/blotato-publisher/scripts/post.py \
 | AI-generated scenes | `/create-veo-video` (this) |
 | Product demos | `/create-veo-video` (this) |
 | Avatar on camera | `/create-heygen-video` |
+
+## Completion Checklist
+
+- [ ] Prompt crafted with scene elements, camera movement, and lighting
+- [ ] Model selected (standard or fast)
+- [ ] Aspect ratio configured (16:9, 9:16, or 1:1)
+- [ ] Reference images provided (if needed for consistency)
+- [ ] Video generated via Vertex AI
+- [ ] Output file saved and verified (plays, ~8 seconds)
 
 ## Related Skills
 

@@ -1,6 +1,7 @@
 ---
 name: create-heygen-video
 description: Generate HeyGen avatar video, convert to vertical, and post
+automation: gated
 allowed-tools: Bash, Read, Write
 depends-on: knowledge-base-query, heygen-script-writer
 ---
@@ -8,6 +9,17 @@ depends-on: knowledge-base-query, heygen-script-writer
 # Create HeyGen Video
 
 End-to-end video creation: Generate HeyGen avatar video -> Convert to vertical -> Add intro -> Upload -> Post to platforms.
+
+## State Dependencies
+
+| Source | Location | Read | Write | Description |
+|--------|----------|------|-------|-------------|
+| Script (if topic) | Knowledge base agent | ✓ | | Generated script from topic |
+| HeyGen Video | HeyGen API | | ✓ | Generated avatar video |
+| Cloudinary | Cloudinary API | | ✓ | Uploaded video URL |
+| Creatomate | Creatomate API | | ✓ | Converted vertical video |
+| Intro Templates | Google Drive `Intro_Templates/` | ✓ | | Branded intro clips |
+| ContentHub | `ContentHub/Published/` | | ✓ | Archived metadata |
 
 ## Quick Start
 
@@ -198,6 +210,20 @@ CTA: "Understanding this psychology is the first step to adoption."
 | Creatomate fails | Try blur-pad mode, then no captions |
 | Upload fails | Retry, check file size |
 | Posting fails | Save video, suggest manual posting |
+
+## Completion Checklist
+
+- [ ] Script ready (provided or generated via knowledge base)
+- [ ] Script within 30-second limit
+- [ ] [APPROVAL GATE] Script approved by user
+- [ ] HeyGen video generated successfully
+- [ ] Video downloaded from HeyGen
+- [ ] Video uploaded to Cloudinary
+- [ ] Video converted to vertical via Creatomate (if vertical platforms)
+- [ ] Branded intro prepended (unless intro=none)
+- [ ] Final video uploaded to Cloudinary
+- [ ] Posted to target platforms via Blotato
+- [ ] All URLs reported to user
 
 ## Related Skills
 

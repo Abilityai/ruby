@@ -1,6 +1,7 @@
 ---
 name: create-video
 description: Generate complete explanatory videos from scratch using AI video generation. Creates scene-by-scene content with Veo 3.1, stitches clips together with transitions, music, and intros/outros. Perfect for explainers, tutorials, concept visualizations.
+automation: gated
 calls:
   - create-explanatory-image
   - nano-banana-image-generator
@@ -10,6 +11,17 @@ allowed-tools: Bash, Read, Write, Glob, Grep, Task
 # /create-video
 
 Generate complete explanatory videos from AI-generated scenes. No source footage needed - the entire video is created from prompts.
+
+## State Dependencies
+
+| Source | Location | Read | Write | Description |
+|--------|----------|------|-------|-------------|
+| Diorama Style | `.claude/skills/broll-diorama-style/SKILL.md` | ✓ | | B-roll prompt guide (default style) |
+| Nano Banana | `.claude/resources/nano_banana_best_practices.md` | ✓ | | Image generation guide (explain/diagram scenes) |
+| Series Assets | `.claude/skills/create-video/assets/` | ✓ | | Series-specific intros/outros |
+| Music Library | `assets/music/catalog.json` | ✓ | ✓ | Existing tracks before generating |
+| VDL | `/tmp/vdl.json` | | ✓ | Video definition list |
+| Output Video | User-specified path | | ✓ | Final assembled video |
 
 **Video Generation**: Uses Google Veo 3.1 with configurable styles (diorama, cinematic, abstract, etc.). AI background music via Suno API is **enabled by default**. ElevenLabs voiceover is **generated per-scene**.
 
@@ -320,6 +332,21 @@ Approve these scenes, or suggest changes?
 |--------|---------|
 | `generate_video.py` | Main orchestrator - generates scenes with voiceover, assembles |
 | `../generate_voiceover.py` | Standalone ElevenLabs TTS generation |
+
+## Completion Checklist
+
+- [ ] Concept analyzed and scenes identified
+- [ ] Style guides read (diorama, nano banana as needed)
+- [ ] Music library checked for existing tracks
+- [ ] Scene plan proposed with types, prompts, and narration
+- [ ] [APPROVAL GATE] User approved scene plan
+- [ ] All scenes generated (Veo for visualize, Nano Banana for explain/diagram)
+- [ ] Voiceover generated per-scene via ElevenLabs
+- [ ] AI music generated (unless disabled or existing track used)
+- [ ] Video assembled with transitions and audio mixing
+- [ ] Intro/outro added (if configured)
+- [ ] Output file verified (plays, correct duration)
+- [ ] New music added to catalog.json (if generated and good)
 
 ## Related Skills
 

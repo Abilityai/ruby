@@ -1,0 +1,10 @@
+name: ruby
+display_name: Ruby - Content Management Agent
+description: |
+  Autonomous content management agent built on Claude Code. Handles content
+  generation, repurposing, scheduling, and multi-platform publishing. Features
+  25+ playbook skills for video processing, article creation, social media
+  engagement, and brand voice management.
+resources:
+  cpu: "2"
+  memory: "4g"

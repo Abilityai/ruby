@@ -1,6 +1,7 @@
 ---
 name: schedule-prepared-content
 description: Schedule social media content from a Generated Content folder. Use when processing repurposed video content.
+automation: gated
 allowed-tools: Bash, Read, Write
 depends-on: blotato-publisher, schedule-tracker, content-pillar-tagger
 ---
@@ -152,6 +153,20 @@ MANUAL POSTING CHECKLIST:
 - **Never post without user confirmation**
 - **Twitter max 4 images/tweet** - exclude Twitter for larger carousels
 - **Tag all posts** with content_pillar and hook_type
+
+## Completion Checklist
+
+- [ ] Generated Content folder path confirmed
+- [ ] Existing schedule checked for conflicts
+- [ ] Content files analyzed and categorized by type
+- [ ] Content previewed for user
+- [ ] Scheduling plan proposed with times and platforms
+- [ ] [APPROVAL GATE] User confirmed schedule
+- [ ] Posts scheduled via Blotato API
+- [ ] All scheduled posts tracked in schedule.json
+- [ ] Content pillar and hook type tagged for each post
+- [ ] Manual posting checklist provided (carousels, threads, newsletters)
+- [ ] Summary with submission IDs presented to user
 
 ## Related Skills
 

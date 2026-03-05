@@ -1,6 +1,7 @@
 ---
 name: schedule-post
 description: Schedule content for future posting. Use when scheduling social media posts for later.
+automation: manual
 allowed-tools: Bash, Read, Write
 depends-on: blotato-publisher, schedule-tracker, tone-of-voice-applicator
 ---
@@ -266,6 +267,19 @@ Every scheduled post MUST include:
 | Invalid date | Use ISO 8601 format with timezone |
 | Past date | Cannot schedule in the past |
 | "Error downloading the image: null" | Include `media` array in payload |
+
+## Completion Checklist
+
+- [ ] Schedule conflicts checked (2-hour window)
+- [ ] Content reviewed against tone of voice profile
+- [ ] Character limits verified for target platform
+- [ ] Media uploaded (Cloudinary or GoFile based on decision tree)
+- [ ] Media URL validated (HTTP 200) if Metricool post
+- [ ] Post scheduled via Blotato API
+- [ ] Submission ID captured from response
+- [ ] schedule.json updated with scheduled entry
+- [ ] Content pillar and hook type tagged
+- [ ] User notified with schedule confirmation
 
 ## Related Skills
 

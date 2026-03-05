@@ -1,12 +1,24 @@
 ---
 name: thumbnails
 description: Generate YouTube thumbnails from video transcript
+automation: manual
 allowed-tools: Bash, Read, Write
 ---
 
 # Generate YouTube Thumbnails
 
 Generate 15 YouTube thumbnail images from a video transcript using Gemini AI and reference photos.
+
+## State Dependencies
+
+| Source | Location | Read | Write | Description |
+|--------|----------|------|-------|-------------|
+| Transcript | `[folder]/transcript.md` | ✓ | | Source video transcript |
+| Reference Photos | Google Drive `Reference Photos/` | ✓ | | Creator face photos (cached locally) |
+| Guest Info | `[folder]/guests.md` | ✓ | | Guest profiles (podcast mode) |
+| Prompt Generator | `youtube_thumbnail_prompt_generator_v3.md` | ✓ | | Prompt generation template |
+| Output Images | `[folder]/Thumbnails_*/` | | ✓ | Generated thumbnail images |
+| Google Drive | Drive folder | | ✓ | Persisted thumbnails |
 
 ## Quick Start
 
