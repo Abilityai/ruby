@@ -1,0 +1,93 @@
+# Files/patterns to exclude when forking Ruby to clients
+# One pattern per line, uses gitignore syntax
+
+# =============================================================================
+# CREDENTIALS (NEVER fork these)
+# =============================================================================
+.env
+.env.local
+.env.*
+!.env.example
+.mcp.json
+.claude/agents/.mcp.json
+.claude/settings.local.json
+.claude/scripts/google/trinity-vertex-ai-account.json
+*-account.json
+credentials.json
+*.pem
+*.key
+
+# =============================================================================
+# EUGENE-SPECIFIC STATE FILES
+# =============================================================================
+
+# Scheduling and tracking
+.claude/memory/schedule.json
+.claude/memory/content_library.yaml
+.claude/memory/article_promotions.json
+.claude/memory/ceo_engine_jobs.json
+
+# Twitter engagement
+.claude/memory/twitter_engagement_state.json
+.claude/memory/micro_influencers_tracker.json
+.claude/memory/reply_queue.json
+.claude/memory/queued_tweet_replies.md
+.claude/memory/twitter_replies.txt
+.claude/memory/trend_research_state.json
+.claude/memory/tweet_analysis_temp.json
+.claude/memory/x_premium_trial_tracker.json
+
+# Influencer databases
+.claude/memory/ai_tech_influencers_database*.json
+.claude/memory/influencer_twitter_data*.json
+
+# YouTube analytics
+.claude/memory/youtube_baseline.json
+.claude/memory/youtube-analysis/
+.claude/memory/intro_templates.json
+
+# Historical reports (Eugene-specific)
+.claude/memory/*_report_*.md
+.claude/memory/engagement_report_*.md
+.claude/memory/twitter_analytics_*.md
+.claude/memory/twitter_analytics_*.txt
+.claude/memory/published_content.md
+
+# =============================================================================
+# CLAUDE RUNTIME (ephemeral, not agent value)
+# =============================================================================
+.claude/telemetry/
+.claude/todos/
+.claude/debug/
+.claude/projects/
+.claude/cache/
+.claude/credentials/
+.claude/statsig/
+
+# =============================================================================
+# DEVELOPMENT ARTIFACTS
+# =============================================================================
+.venv/
+venv/
+**/venv/
+**/.venv/
+node_modules/
+__pycache__/
+*.pyc
+*.pyo
+*.log
+.DS_Store
+scripts/archive/
+resources/temp/
+outputs/
+
+# =============================================================================
+# BRANDED VIDEO ASSETS (clients need their own)
+# =============================================================================
+# Exclude branded intros/outros and B-roll (clients create their own)
+.claude/skills/edit-video/assets/intros/
+.claude/skills/edit-video/assets/broll/
+.claude/skills/create-video/assets/intros/
+.claude/skills/create-video/assets/outros/
+
+# Keep: music/, sfx/, fonts/ (generic, reusable)

@@ -1,0 +1,310 @@
+{
+  "version": "1.0",
+  "last_updated": "2026-01-27",
+  "assets": [
+    {
+      "id": "typing_hands",
+      "path": "broll/tech/typing_hands.mp4",
+      "type": "broll",
+      "category": "tech",
+      "duration": 5.0,
+      "resolution": "1920x1080",
+      "tags": ["coding", "typing", "hands", "keyboard", "tech", "programming", "developer"],
+      "cloudinary_url": null,
+      "description": "Close-up of hands typing on keyboard"
+    },
+    {
+      "id": "code_scrolling",
+      "path": "broll/tech/code_scrolling.mp4",
+      "type": "broll",
+      "category": "tech",
+      "duration": 6.0,
+      "resolution": "1920x1080",
+      "tags": ["code", "programming", "screen", "IDE", "software", "development"],
+      "cloudinary_url": null,
+      "description": "Code scrolling on screen"
+    },
+    {
+      "id": "server_room",
+      "path": "broll/tech/server_room.mp4",
+      "type": "broll",
+      "category": "tech",
+      "duration": 8.0,
+      "resolution": "1920x1080",
+      "tags": ["server", "data center", "infrastructure", "cloud", "computing", "hardware"],
+      "cloudinary_url": null,
+      "description": "Server room with blinking lights"
+    },
+    {
+      "id": "ai_visualization",
+      "path": "broll/tech/ai_visualization.mp4",
+      "type": "broll",
+      "category": "tech",
+      "duration": 5.0,
+      "resolution": "1920x1080",
+      "tags": ["AI", "artificial intelligence", "neural network", "machine learning", "deep learning", "algorithm"],
+      "cloudinary_url": null,
+      "description": "Abstract AI/neural network visualization"
+    },
+    {
+      "id": "meeting_room",
+      "path": "broll/business/meeting_room.mp4",
+      "type": "broll",
+      "category": "business",
+      "duration": 6.0,
+      "resolution": "1920x1080",
+      "tags": ["meeting", "business", "corporate", "team", "collaboration", "office"],
+      "cloudinary_url": null,
+      "description": "Business meeting in progress"
+    },
+    {
+      "id": "handshake",
+      "path": "broll/business/handshake.mp4",
+      "type": "broll",
+      "category": "business",
+      "duration": 3.0,
+      "resolution": "1920x1080",
+      "tags": ["handshake", "deal", "agreement", "partnership", "business", "success"],
+      "cloudinary_url": null,
+      "description": "Professional handshake"
+    },
+    {
+      "id": "whiteboard",
+      "path": "broll/business/whiteboard.mp4",
+      "type": "broll",
+      "category": "business",
+      "duration": 5.0,
+      "resolution": "1920x1080",
+      "tags": ["whiteboard", "planning", "strategy", "brainstorm", "ideas", "diagram"],
+      "cloudinary_url": null,
+      "description": "Drawing on whiteboard"
+    },
+    {
+      "id": "particles_blue",
+      "path": "broll/abstract/particles_blue.mp4",
+      "type": "broll",
+      "category": "abstract",
+      "duration": 10.0,
+      "resolution": "1920x1080",
+      "tags": ["particles", "abstract", "technology", "futuristic", "motion", "background"],
+      "cloudinary_url": null,
+      "description": "Blue particle motion background"
+    },
+    {
+      "id": "gradient_flow",
+      "path": "broll/abstract/gradient_flow.mp4",
+      "type": "broll",
+      "category": "abstract",
+      "duration": 8.0,
+      "resolution": "1920x1080",
+      "tags": ["gradient", "abstract", "flow", "smooth", "transition", "background"],
+      "cloudinary_url": null,
+      "description": "Flowing gradient animation"
+    },
+    {
+      "id": "data_streams",
+      "path": "broll/abstract/data_streams.mp4",
+      "type": "broll",
+      "category": "abstract",
+      "duration": 6.0,
+      "resolution": "1920x1080",
+      "tags": ["data", "streams", "digital", "matrix", "information", "tech"],
+      "cloudinary_url": null,
+      "description": "Digital data streams visualization"
+    },
+    {
+      "id": "yellow_callout",
+      "path": "graphics/lower_thirds/yellow_callout.png",
+      "type": "graphic",
+      "category": "lower_third",
+      "duration": null,
+      "resolution": "800x200",
+      "tags": ["callout", "highlight", "key point", "emphasis", "yellow"],
+      "cloudinary_url": null,
+      "description": "Yellow callout lower third"
+    },
+    {
+      "id": "subtle_bar",
+      "path": "graphics/lower_thirds/subtle_bar.png",
+      "type": "graphic",
+      "category": "lower_third",
+      "duration": null,
+      "resolution": "1920x100",
+      "tags": ["lower third", "name", "title", "subtle", "minimal"],
+      "cloudinary_url": null,
+      "description": "Subtle lower third bar"
+    },
+    {
+      "id": "swoosh_flying",
+      "path": "sfx/swoosh_flying.mp3",
+      "type": "sfx",
+      "category": "quick",
+      "duration": 0.57,
+      "tags": ["swoosh", "quick", "subtle", "flying"],
+      "description": "Quick flying swoosh - best for frequent transitions"
+    },
+    {
+      "id": "sweep_small_fast",
+      "path": "sfx/sweep_small_fast.mp3",
+      "type": "sfx",
+      "category": "quick",
+      "duration": 0.78,
+      "tags": ["sweep", "quick", "small", "fast"],
+      "description": "Small fast sweep - minimal transition"
+    },
+    {
+      "id": "whoosh_arrow",
+      "path": "sfx/whoosh_arrow.mp3",
+      "type": "sfx",
+      "category": "quick",
+      "duration": 1.10,
+      "tags": ["whoosh", "arrow", "quick", "sharp"],
+      "description": "Arrow whoosh - sharp quick transition"
+    },
+    {
+      "id": "swoosh_vacuum",
+      "path": "sfx/swoosh_vacuum.mp3",
+      "type": "sfx",
+      "category": "quick",
+      "duration": 1.27,
+      "tags": ["swoosh", "vacuum", "air"],
+      "description": "Vacuum swoosh - air suction effect"
+    },
+    {
+      "id": "whoosh_fast_transition",
+      "path": "sfx/whoosh_fast_transition.mp3",
+      "type": "sfx",
+      "category": "standard",
+      "duration": 1.33,
+      "tags": ["whoosh", "fast", "transition", "standard"],
+      "description": "Fast transition whoosh - standard B-roll transition"
+    },
+    {
+      "id": "sweep_scifi_fast",
+      "path": "sfx/sweep_scifi_fast.mp3",
+      "type": "sfx",
+      "category": "standard",
+      "duration": 1.65,
+      "tags": ["sweep", "scifi", "tech", "fast"],
+      "description": "Sci-fi sweep - tech/futuristic content"
+    },
+    {
+      "id": "tech_slide",
+      "path": "sfx/tech_slide.mp3",
+      "type": "sfx",
+      "category": "standard",
+      "duration": 2.26,
+      "tags": ["tech", "slide", "modern", "ui"],
+      "description": "Tech slide - modern UI transitions"
+    },
+    {
+      "id": "whoosh_air",
+      "path": "sfx/whoosh_air.mp3",
+      "type": "sfx",
+      "category": "standard",
+      "duration": 2.32,
+      "tags": ["whoosh", "air", "wind", "soft"],
+      "description": "Air whoosh - soft wind transition"
+    },
+    {
+      "id": "whoosh_swirling",
+      "path": "sfx/whoosh_swirling.mp3",
+      "type": "sfx",
+      "category": "standard",
+      "duration": 2.52,
+      "tags": ["whoosh", "swirling", "spin"],
+      "description": "Swirling whoosh - circular motion effect"
+    },
+    {
+      "id": "sweep_short",
+      "path": "sfx/sweep_short.mp3",
+      "type": "sfx",
+      "category": "standard",
+      "duration": 3.20,
+      "tags": ["sweep", "short", "transition"],
+      "description": "Short sweep - medium transition"
+    },
+    {
+      "id": "whoosh_magic_sparkle",
+      "path": "sfx/whoosh_magic_sparkle.mp3",
+      "type": "sfx",
+      "category": "dramatic",
+      "duration": 3.50,
+      "tags": ["whoosh", "magic", "sparkle", "fantasy"],
+      "description": "Magic sparkle whoosh - creative/fantasy content"
+    },
+    {
+      "id": "whoosh_epic_trailer",
+      "path": "sfx/whoosh_epic_trailer.mp3",
+      "type": "sfx",
+      "category": "dramatic",
+      "duration": 3.53,
+      "tags": ["whoosh", "epic", "trailer", "cinematic"],
+      "description": "Epic trailer whoosh - key moments"
+    },
+    {
+      "id": "whoosh_ghostly",
+      "path": "sfx/whoosh_ghostly.mp3",
+      "type": "sfx",
+      "category": "dramatic",
+      "duration": 3.76,
+      "tags": ["whoosh", "ghostly", "eerie", "mysterious"],
+      "description": "Ghostly whoosh - mysterious/dark content"
+    },
+    {
+      "id": "swoosh_windy",
+      "path": "sfx/swoosh_windy.mp3",
+      "type": "sfx",
+      "category": "dramatic",
+      "duration": 4.81,
+      "tags": ["swoosh", "windy", "atmospheric"],
+      "description": "Windy swoosh - atmospheric dramatic transition"
+    },
+    {
+      "id": "impact_epic_trailer",
+      "path": "sfx/impact_epic_trailer.mp3",
+      "type": "sfx",
+      "category": "impact",
+      "duration": 4.87,
+      "tags": ["impact", "epic", "trailer", "hit"],
+      "description": "Epic trailer impact - major thesis statements"
+    },
+    {
+      "id": "impact_cool_trailer",
+      "path": "sfx/impact_cool_trailer.mp3",
+      "type": "sfx",
+      "category": "impact",
+      "duration": 6.00,
+      "tags": ["impact", "cool", "trailer", "cinematic"],
+      "description": "Cool trailer impact - cinematic moments"
+    },
+    {
+      "id": "whoosh_cinematic_tunnel",
+      "path": "sfx/whoosh_cinematic_tunnel.mp3",
+      "type": "sfx",
+      "category": "cinematic",
+      "duration": 6.75,
+      "tags": ["whoosh", "cinematic", "tunnel", "reverb", "dramatic"],
+      "description": "Cinematic tunnel whoosh - dramatic reverb effect"
+    },
+    {
+      "id": "impact_orchestra",
+      "path": "sfx/impact_orchestra.mp3",
+      "type": "sfx",
+      "category": "cinematic",
+      "duration": 7.12,
+      "tags": ["impact", "orchestra", "epic", "brass"],
+      "description": "Orchestra impact - epic orchestral hit"
+    }
+  ],
+  "categories": {
+    "broll": ["tech", "business", "abstract"],
+    "graphic": ["lower_third", "transition", "overlay"],
+    "sfx": ["quick", "standard", "dramatic", "impact", "cinematic"]
+  },
+  "tag_synonyms": {
+    "AI": ["artificial intelligence", "machine learning", "ML", "deep learning", "neural network"],
+    "coding": ["programming", "development", "software", "code"],
+    "business": ["corporate", "enterprise", "professional", "office"]
+  }
+}

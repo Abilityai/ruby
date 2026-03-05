@@ -1,0 +1,33 @@
+# Content Library - tracks long-form content workflow
+# Copy this file to content_library.yaml to start tracking
+#
+# Article statuses: idea | draft | review | approved | published
+# YouTube tracking: videos + repurposing completeness
+
+articles: []
+  # Example entry:
+  # - id: my-article-slug
+  #   title: "Article Title"
+  #   status: draft
+  #   created: "2026-01-15"
+  #   drive_path: Articles/drafts/my-article-slug
+  #   target_platforms: [linkedin, medium]
+  #   content_pillar: "technical-depth"
+  #   published: {}
+
+youtube: []
+  # Example entry:
+  # - id: my-video-slug
+  #   title: "Video Title"
+  #   youtube_url: https://youtu.be/xxxxx
+  #   published_date: "2026-01-15"
+  #   repurposed:
+  #     twitter_threads: 0
+  #     linkedin_posts: 0
+  #     newsletters: 0
+  #     shorts: 0
+  #     blog_posts: 0
+
+metadata:
+  last_updated: ""
+  version: "1.0"

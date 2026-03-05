@@ -1,0 +1,95 @@
+title: "Ruby Content Dashboard"
+refresh: 300
+
+sections:
+  - title: "Content Pipeline"
+    layout: grid
+    columns: 4
+    widgets:
+      - type: metric
+        label: "Articles Draft"
+        value: 0
+        color: gray
+      - type: metric
+        label: "Articles Review"
+        value: 0
+        color: yellow
+      - type: metric
+        label: "Articles Approved"
+        value: 0
+        color: blue
+      - type: metric
+        label: "Articles Published"
+        value: 0
+        color: green
+
+  - title: "YouTube Library"
+    layout: grid
+    columns: 3
+    widgets:
+      - type: metric
+        label: "Total Videos"
+        value: 0
+      - type: metric
+        label: "Need Repurposing"
+        value: 0
+        color: yellow
+      - type: metric
+        label: "Fully Repurposed"
+        value: 0
+        color: green
+
+  - title: "Social Scheduling"
+    layout: grid
+    columns: 3
+    widgets:
+      - type: metric
+        label: "Scheduled Posts"
+        value: 0
+        color: blue
+      - type: metric
+        label: "Posted (7 days)"
+        value: 0
+        color: green
+      - type: list
+        title: "Active Platforms"
+        items:
+          - "YouTube"
+          - "Twitter/X"
+          - "LinkedIn"
+          - "Instagram"
+          - "TikTok"
+          - "Threads"
+        style: bullet
+        max_items: 6
+
+  - title: "Twitter Analytics (7 days)"
+    layout: grid
+    columns: 4
+    widgets:
+      - type: metric
+        label: "Followers"
+        value: 0
+      - type: metric
+        label: "Impressions"
+        value: 0
+      - type: metric
+        label: "Avg Engagement"
+        value: "0%"
+      - type: metric
+        label: "Interactions"
+        value: 0
+
+  - title: "LinkedIn Analytics (7 days)"
+    layout: grid
+    columns: 3
+    widgets:
+      - type: metric
+        label: "Followers"
+        value: 0
+      - type: metric
+        label: "Impressions"
+        value: 0
+      - type: metric
+        label: "Engagement"
+        value: "0%"
