@@ -5,6 +5,9 @@ description: |
   generation, repurposing, scheduling, and multi-platform publishing. Features
   25+ playbook skills for video processing, article creation, social media
   engagement, and brand voice management.
+skills:
+  - name: start-here
+    description: "Orientation guide - introduces Ruby, its core capabilities, main use cases, and the abilities marketplace"
 resources:
   cpu: "2"
   memory: "4g"
